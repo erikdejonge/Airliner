@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'Airliner USA' target in the 'Airliner USA' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif

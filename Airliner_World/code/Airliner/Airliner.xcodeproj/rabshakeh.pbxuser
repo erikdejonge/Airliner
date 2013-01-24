@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* Airliner */ = {
+		activeExec = 0;
+		executables = (
+			C9F69BC210E3680800266BF8 /* Airliner */,
+		);
+	};
+	1F3B9A2B0EF2145700286867 /* AirlinerAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1214, 2512}}";
+			sepNavSelRange = "{4033, 0}";
+			sepNavVisRange = "{2395, 2326}";
+			sepNavWindowFrame = "{{15, 88}, {1610, 1085}}";
+		};
+	};
+	1F3B9A2C0EF2145700286867 /* AirlinerAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1214, 1361}}";
+			sepNavSelRange = "{272, 47}";
+			sepNavVisRange = "{0, 326}";
+		};
+	};
+	1F3B9A820EF2151B00286867 /* Airliner_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1300, 971}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 179}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = C9F69BC210E3680800266BF8 /* Airliner */;
+		activeSDKPreference = iphoneos4.0;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Airliner */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Airliner */,
+		);
+		breakpoints = (
+			C92A161610FA34E900AAEA08 /* obj_throw_exception */,
+		);
+		codeSenseManager = C9F69BDC10E3680A00266BF8 /* Code sense */;
+		executables = (
+			C9F69BC210E3680800266BF8 /* Airliner */,
+			C9FD3CBA1114F23700C9A62E /* Airliner-iPad */,
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					198,
+					20,
+					99,
+					99,
+					29,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXBookmarksDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBookmarksDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					200,
+					887.58349609375,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBookmarksDataSource_LocationID,
+					PBXBookmarksDataSource_NameID,
+					PBXBookmarksDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1036,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					1092,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					996,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 303208344;
+			PBXWorkspaceStateSaveDate = 303208344;
+		};
+		perUserProjectItems = {
+			C90C330812105B3900F34D22 /* PBXTextBookmark */ = C90C330812105B3900F34D22 /* PBXTextBookmark */;
+			C916D9AB1208531300D8B494 /* PBXTextBookmark */ = C916D9AB1208531300D8B494 /* PBXTextBookmark */;
+			C916D9EF1208565600D8B494 /* PBXTextBookmark */ = C916D9EF1208565600D8B494 /* PBXTextBookmark */;
+			C916D9F31208565600D8B494 /* PBXTextBookmark */ = C916D9F31208565600D8B494 /* PBXTextBookmark */;
+			C9DCC983121297B2003E1B2A /* PBXTextBookmark */ = C9DCC983121297B2003E1B2A /* PBXTextBookmark */;
+			C9DCC984121297B2003E1B2A /* PlistBookmark */ = C9DCC984121297B2003E1B2A /* PlistBookmark */;
+			C9DCC9971212BDF8003E1B2A /* PlistBookmark */ = C9DCC9971212BDF8003E1B2A /* PlistBookmark */;
+			C9F4DC751208656F00F53839 /* PBXTextBookmark */ = C9F4DC751208656F00F53839 /* PBXTextBookmark */;
+			C9F4DC761208656F00F53839 /* PBXTextBookmark */ = C9F4DC761208656F00F53839 /* PBXTextBookmark */;
+			C9F4DC771208656F00F53839 /* PBXTextBookmark */ = C9F4DC771208656F00F53839 /* PBXTextBookmark */;
+			C9F4DC9612094AA600F53839 /* PBXTextBookmark */ = C9F4DC9612094AA600F53839 /* PBXTextBookmark */;
+		};
+		sourceControlManager = C9F69BDB10E3680A00266BF8 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {927, 1352}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 363}";
+		};
+	};
+	504DFC6810AF1739006D82FE /* LICENSE.cocos2d */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1214, 847}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 890}";
+		};
+	};
+	C90C330812105B3900F34D22 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9F69C0610E3693300266BF8 /* GameState.h */;
+		name = "GameState.h: 54";
+		rLen = 5;
+		rLoc = 1504;
+		rType = 0;
+		vrLen = 2686;
+		vrLoc = 0;
+	};
+	C916D9AB1208531300D8B494 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9AA20F511CF9B8C00F5F8D1 /* CCMenu.m */;
+		name = "CCMenu.m: 335";
+		rLen = 0;
+		rLoc = 9379;
+		rType = 0;
+		vrLen = 2845;
+		vrLoc = 8143;
+	};
+	C916D9EF1208565600D8B494 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9F69C1310E3693400266BF8 /* menu_sound.m */;
+		name = "menu_sound.m: 24";
+		rLen = 0;
+		rLoc = 653;
+		rType = 0;
+		vrLen = 2513;
+		vrLoc = 0;
+	};
+	C916D9F31208565600D8B494 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F3B9A2C0EF2145700286867 /* AirlinerAppDelegate.h */;
+		name = "AirlinerAppDelegate.h: 15";
+		rLen = 47;
+		rLoc = 272;
+		rType = 0;
+		vrLen = 326;
+		vrLoc = 0;
+	};
+	C918CD3F10E9FF0600627B96 /* menu_instructions.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1318, 1319}}";
+			sepNavSelRange = "{84, 32}";
+			sepNavVisRange = "{0, 207}";
+		};
+	};
+	C918CD4010E9FF0600627B96 /* menu_instructions.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1436, 1632}}";
+			sepNavSelRange = "{2228, 0}";
+			sepNavVisRange = "{409, 2338}";
+		};
+	};
+	C92A161610FA34E900AAEA08 /* obj_throw_exception */ = {
+		isa = PBXSymbolicBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 1;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		hitCount = 0;
+		ignoreCount = 0;
+		location = "";
+		modificationTime = 303211688.005179;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+		symbolName = obj_throw_exception;
+	};
+	C93EA10310E7E145005D5C25 /* menu_about.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1300, 971}}";
+			sepNavSelRange = "{77, 55}";
+			sepNavVisRange = "{0, 294}";
+		};
+	};
+	C93EA10410E7E145005D5C25 /* menu_about.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1334, 1885}}";
+			sepNavSelRange = "{3272, 0}";
+			sepNavVisRange = "{1412, 3361}";
+		};
+	};
+	C98B2CA610E51ACF0009F359 /* airliner-world-1024.tmx */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {15965, 978}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 16520}";
+		};
+	};
+	C9AA20AF11CF9B8C00F5F8D1 /* cpConstraint.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1182, 715}}";
+			sepNavSelRange = "{1162, 0}";
+			sepNavVisRange = "{0, 1140}";
+			sepNavWindowFrame = "{{15, 410}, {2436, 1163}}";
+		};
+	};
+	C9AA20DB11CF9B8C00F5F8D1 /* CCDirector.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1202, 15002}}";
+			sepNavSelRange = "{6582, 0}";
+			sepNavVisRange = "{5960, 800}";
+		};
+	};
+	C9AA20F511CF9B8C00F5F8D1 /* CCMenu.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1182, 6080}}";
+			sepNavSelRange = "{9379, 0}";
+			sepNavVisRange = "{0, 3}";
+		};
+	};
+	C9AA20FB11CF9B8C00F5F8D1 /* CCNode.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1214, 12640}}";
+			sepNavSelRange = "{8191, 16}";
+			sepNavVisRange = "{6732, 1948}";
+		};
+	};
+	C9AA211C11CF9B8C00F5F8D1 /* CCScheduler.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1289, 9744}}";
+			sepNavSelRange = "{3706, 0}";
+			sepNavVisRange = "{2932, 1237}";
+		};
+	};
+	C9AA218211CF9B8C00F5F8D1 /* NSCharacterSet_Extensions.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1182, 364}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{97, 643}";
+		};
+	};
+	C9B4718210F2023300F77019 /* menu_highscores.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 1268}}";
+			sepNavSelRange = "{101, 0}";
+			sepNavVisRange = "{0, 101}";
+		};
+	};
+	C9B4718310F2023300F77019 /* menu_highscores.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1398, 1456}}";
+			sepNavSelRange = "{2762, 74}";
+			sepNavVisRange = "{281, 3249}";
+		};
+	};
+	C9B471C810F2088500F77019 /* LocalScore.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1322, 1306}}";
+			sepNavSelRange = "{241, 0}";
+			sepNavVisRange = "{0, 1167}";
+		};
+	};
+	C9B471C910F2088500F77019 /* LocalScore.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1334, 1599}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 3621}";
+		};
+	};
+	C9CF048610E3B4FF00FE3BF7 /* parse_destinations.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1022, 932}}";
+			sepNavSelRange = "{855, 0}";
+			sepNavVisRange = "{0, 995}";
+		};
+	};
+	C9CF048A10E3B4FF00FE3BF7 /* uncrust.sh */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 637}}";
+			sepNavSelRange = "{1180, 14}";
+			sepNavVisRange = "{606, 1323}";
+		};
+	};
+	C9DCC983121297B2003E1B2A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9F69C0710E3693300266BF8 /* GameState.m */;
+		name = "GameState.m: 13";
+		rLen = 46;
+		rLoc = 218;
+		rType = 0;
+		vrLen = 2105;
+		vrLoc = 0;
+	};
+	C9DCC984121297B2003E1B2A /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 50F414EF1069373D002A0D5E /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			LSRequiresIPhoneOS,
+		);
+		name = /Users/rabshakeh/workspace/Airliner/Resources/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	C9DCC9971212BDF8003E1B2A /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 50F414EF1069373D002A0D5E /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			LSRequiresIPhoneOS,
+		);
+		name = /Users/rabshakeh/workspace/Airliner/Resources/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	C9F4DC751208656F00F53839 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F3B9A2B0EF2145700286867 /* AirlinerAppDelegate.m */;
+		name = "AirlinerAppDelegate.m: 125";
+		rLen = 0;
+		rLoc = 4033;
+		rType = 0;
+		vrLen = 2326;
+		vrLoc = 2395;
+	};
+	C9F4DC761208656F00F53839 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9F69C1710E3693400266BF8 /* player_hud.m */;
+		name = "player_hud.m: 472";
+		rLen = 0;
+		rLoc = 18522;
+		rType = 0;
+		vrLen = 4330;
+		vrLoc = 14696;
+	};
+	C9F4DC771208656F00F53839 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9F69C1110E3693400266BF8 /* menu_main.m */;
+		name = "menu_main.m: 68";
+		rLen = 0;
+		rLoc = 1896;
+		rType = 0;
+		vrLen = 4442;
+		vrLoc = 1274;
+	};
+	C9F4DC9612094AA600F53839 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9F69C0510E3693300266BF8 /* GameScene.m */;
+		name = "GameScene.m: 130";
+		rLen = 21;
+		rLoc = 3509;
+		rType = 0;
+		vrLen = 2767;
+		vrLoc = 2034;
+	};
+	C9F69BC210E3680800266BF8 /* Airliner */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Airliner;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	C9F69BDB10E3680A00266BF8 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	C9F69BDC10E3680A00266BF8 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	C9F69C0210E3693300266BF8 /* AirlinerIntroNode.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1036, 1273}}";
+			sepNavSelRange = "{251, 0}";
+			sepNavVisRange = "{0, 271}";
+		};
+	};
+	C9F69C0310E3693300266BF8 /* AirlinerIntroNode.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1036, 1273}}";
+			sepNavSelRange = "{1370, 0}";
+			sepNavVisRange = "{0, 1661}";
+		};
+	};
+	C9F69C0410E3693300266BF8 /* GameScene.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2112, 1274}}";
+			sepNavSelRange = "{291, 23}";
+			sepNavVisRange = "{0, 915}";
+		};
+	};
+	C9F69C0510E3693300266BF8 /* GameScene.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1214, 4464}}";
+			sepNavSelRange = "{3509, 21}";
+			sepNavVisRange = "{2034, 2767}";
+		};
+	};
+	C9F69C0610E3693300266BF8 /* GameState.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1214, 2784}}";
+			sepNavSelRange = "{1504, 5}";
+			sepNavVisRange = "{0, 2686}";
+		};
+	};
+	C9F69C0710E3693300266BF8 /* GameState.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1214, 11998}}";
+			sepNavSelRange = "{218, 46}";
+			sepNavVisRange = "{0, 2105}";
+			sepNavWindowFrame = "{{40, 61}, {1823, 1117}}";
+		};
+	};
+	C9F69C0810E3693300266BF8 /* LoadingBarNode.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1334, 1264}}";
+			sepNavSelRange = "{423, 0}";
+			sepNavVisRange = "{0, 669}";
+		};
+	};
+	C9F69C0910E3693400266BF8 /* LoadingBarNode.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1202, 1287}}";
+			sepNavSelRange = "{2419, 0}";
+			sepNavVisRange = "{1630, 855}";
+		};
+	};
+	C9F69C0A10E3693400266BF8 /* m_cloudlayer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1489, 1304}}";
+			sepNavSelRange = "{455, 0}";
+			sepNavVisRange = "{0, 2087}";
+		};
+	};
+	C9F69C0B10E3693400266BF8 /* m_cloudlayer.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2112, 2145}}";
+			sepNavSelRange = "{1589, 0}";
+			sepNavVisRange = "{2236, 3576}";
+		};
+	};
+	C9F69C0C10E3693400266BF8 /* m_target.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1214, 1384}}";
+			sepNavSelRange = "{671, 0}";
+			sepNavVisRange = "{0, 679}";
+		};
+	};
+	C9F69C0D10E3693400266BF8 /* m_target.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1214, 15632}}";
+			sepNavSelRange = "{2409, 0}";
+			sepNavVisRange = "{0, 2375}";
+			sepNavWindowFrame = "{{2596, 0}, {1150, 1600}}";
+		};
+	};
+	C9F69C0E10E3693400266BF8 /* m_worldclip.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1380, 1384}}";
+			sepNavSelRange = "{484, 0}";
+			sepNavVisRange = "{0, 722}";
+		};
+	};
+	C9F69C0F10E3693400266BF8 /* m_worldclip.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1372, 2752}}";
+			sepNavSelRange = "{591, 0}";
+			sepNavVisRange = "{0, 2633}";
+		};
+	};
+	C9F69C1010E3693400266BF8 /* menu_main.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1210, 1256}}";
+			sepNavSelRange = "{43, 0}";
+			sepNavVisRange = "{0, 149}";
+		};
+	};
+	C9F69C1110E3693400266BF8 /* menu_main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1836, 2384}}";
+			sepNavSelRange = "{1896, 0}";
+			sepNavVisRange = "{1274, 4442}";
+		};
+	};
+	C9F69C1210E3693400266BF8 /* menu_sound.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1249, 1193}}";
+			sepNavSelRange = "{0, 150}";
+			sepNavVisRange = "{0, 150}";
+		};
+	};
+	C9F69C1310E3693400266BF8 /* menu_sound.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1428, 1760}}";
+			sepNavSelRange = "{653, 0}";
+			sepNavVisRange = "{0, 2513}";
+		};
+	};
+	C9F69C1410E3693400266BF8 /* player_airplane.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1214, 1361}}";
+			sepNavSelRange = "{653, 0}";
+			sepNavVisRange = "{0, 1072}";
+		};
+	};
+	C9F69C1510E3693400266BF8 /* player_airplane.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1214, 3296}}";
+			sepNavSelRange = "{3660, 0}";
+			sepNavVisRange = "{3588, 2344}";
+		};
+	};
+	C9F69C1610E3693400266BF8 /* player_hud.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1158, 1248}}";
+			sepNavSelRange = "{818, 10}";
+			sepNavVisRange = "{0, 1312}";
+		};
+	};
+	C9F69C1710E3693400266BF8 /* player_hud.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1764, 7760}}";
+			sepNavSelRange = "{18522, 0}";
+			sepNavVisRange = "{14696, 4330}";
+			sepNavWindowFrame = "{{231, 64}, {1150, 1114}}";
+		};
+	};
+	C9F6A1FF10E3801B00266BF8 /* menu-game-over-btn-new.png */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{1776, 58}, {1150, 1520}}";
+		};
+	};
+	C9FD3B041114F23700C9A62E /* Airliner-iPad */ = {
+		activeExec = 0;
+		executables = (
+			C9FD3CBA1114F23700C9A62E /* Airliner-iPad */,
+		);
+	};
+	C9FD3CBA1114F23700C9A62E /* Airliner-iPad */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Airliner-iPad";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+}

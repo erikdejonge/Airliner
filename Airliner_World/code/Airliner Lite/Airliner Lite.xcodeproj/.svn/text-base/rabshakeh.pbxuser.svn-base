@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* Airliner Lite */ = {
+		activeExec = 0;
+		executables = (
+			C901155910FB5E6A00EA417D /* Airliner Lite */,
+		);
+	};
+	1F3B9A2B0EF2145700286867 /* Airliner_LiteAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1142, 1573}}";
+			sepNavSelRange = "{1046, 0}";
+			sepNavVisRange = "{0, 3390}";
+			sepNavWindowFrame = "{{1224, 58}, {1150, 1520}}";
+		};
+	};
+	1F3B9A2C0EF2145700286867 /* Airliner_LiteAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1286, 854}}";
+			sepNavSelRange = "{338, 0}";
+			sepNavVisRange = "{0, 339}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Distribute;
+		activeExecutable = C901155910FB5E6A00EA417D /* Airliner Lite */;
+		activeSDKPreference = iphoneos3.1.2;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Airliner Lite */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Airliner Lite */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = C901157210FB5E8D00EA417D /* Code sense */;
+		executables = (
+			C901155910FB5E6A00EA417D /* Airliner Lite */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					964,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 286893844;
+			PBXWorkspaceStateSaveDate = 286893844;
+		};
+		perUserProjectItems = {
+			C90118C610FB65BA00EA417D /* PBXBookmark */ = C90118C610FB65BA00EA417D /* PBXBookmark */;
+			C90118C710FB65BA00EA417D /* PBXBookmark */ = C90118C710FB65BA00EA417D /* PBXBookmark */;
+			C9194D4A1117269F0070B272 /* PBXTextBookmark */ = C9194D4A1117269F0070B272 /* PBXTextBookmark */;
+			C9194D4B1117269F0070B272 /* PBXTextBookmark */ = C9194D4B1117269F0070B272 /* PBXTextBookmark */;
+			C9194D56111727980070B272 /* PBXTextBookmark */ = C9194D56111727980070B272 /* PBXTextBookmark */;
+			C925EBB610FB823A0084BCAA /* PBXTextBookmark */ = C925EBB610FB823A0084BCAA /* PBXTextBookmark */;
+			C925ECB310FB88990084BCAA /* PBXBookmark */ = C925ECB310FB88990084BCAA /* PBXBookmark */;
+			C94BBD9F1119721F00A0B7DB /* PBXTextBookmark */ = C94BBD9F1119721F00A0B7DB /* PBXTextBookmark */;
+			C94BBDA01119721F00A0B7DB /* PBXTextBookmark */ = C94BBDA01119721F00A0B7DB /* PBXTextBookmark */;
+			C94BBDF7111979A000A0B7DB /* PBXTextBookmark */ = C94BBDF7111979A000A0B7DB /* PBXTextBookmark */;
+			C94BBE3A11197B7900A0B7DB /* PBXTextBookmark */ = C94BBE3A11197B7900A0B7DB /* PBXTextBookmark */;
+			C9ADC30D1115CD8800BAB3F0 /* PBXTextBookmark */ = C9ADC30D1115CD8800BAB3F0 /* PBXTextBookmark */;
+			C9B3A97C1117181D001FFC16 /* PBXTextBookmark */ = C9B3A97C1117181D001FFC16 /* PBXTextBookmark */;
+			C9B3A97D1117181D001FFC16 /* PBXTextBookmark */ = C9B3A97D1117181D001FFC16 /* PBXTextBookmark */;
+			C9B3AAC311171CED001FFC16 /* PBXTextBookmark */ = C9B3AAC311171CED001FFC16 /* PBXTextBookmark */;
+			C9C2D3081119A71D001A34FC /* PlistBookmark */ = C9C2D3081119A71D001A34FC /* PlistBookmark */;
+			C9C2D3091119A71D001A34FC /* PBXTextBookmark */ = C9C2D3091119A71D001A34FC /* PBXTextBookmark */;
+		};
+		sourceControlManager = C901157110FB5E8D00EA417D /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	506EE05D10304ED200A389B3 /* cocos2d libraries */ = {
+		activeExec = 0;
+	};
+	C901155910FB5E6A00EA417D /* Airliner Lite */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Airliner Lite";
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	C901157110FB5E8D00EA417D /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	C901157210FB5E8D00EA417D /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	C901187D10FB61EE00EA417D /* AirlinerIntroNode.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1142, 1355}}";
+			sepNavSelRange = "{1658, 0}";
+			sepNavVisRange = "{0, 1658}";
+		};
+	};
+	C901188010FB61EE00EA417D /* GameState.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1141, 2223}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 2976}";
+		};
+	};
+	C901188110FB61EE00EA417D /* GameState.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1142, 10296}}";
+			sepNavSelRange = "{7062, 0}";
+			sepNavVisRange = "{5107, 3041}";
+		};
+	};
+	C901188810FB61EE00EA417D /* m_target.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1142, 1378}}";
+			sepNavSelRange = "{338, 14}";
+			sepNavVisRange = "{0, 717}";
+		};
+	};
+	C901188910FB61EE00EA417D /* m_target.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {22111, 9620}}";
+			sepNavSelRange = "{650, 0}";
+			sepNavVisRange = "{1646, 3485}";
+			sepNavWindowFrame = "{{2575, 0}, {1150, 1600}}";
+		};
+	};
+	C901188B10FB61EE00EA417D /* m_worldclip.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {948, 2327}}";
+			sepNavSelRange = "{226, 0}";
+			sepNavVisRange = "{0, 278}";
+		};
+	};
+	C901188D10FB61EE00EA417D /* menu_about.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 1885}}";
+			sepNavSelRange = "{2236, 98}";
+			sepNavVisRange = "{596, 3393}";
+		};
+	};
+	C901189510FB61EE00EA417D /* menu_main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1608, 1833}}";
+			sepNavSelRange = "{472, 0}";
+			sepNavVisRange = "{870, 4719}";
+		};
+	};
+	C901189810FB61EE00EA417D /* player_airplane.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1141, 1366}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1047}";
+		};
+	};
+	C901189A10FB61EE00EA417D /* player_hud.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1141, 1366}}";
+			sepNavSelRange = "{554, 20}";
+			sepNavVisRange = "{0, 1312}";
+		};
+	};
+	C901189B10FB61EE00EA417D /* player_hud.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1545, 6344}}";
+			sepNavSelRange = "{14646, 20}";
+			sepNavVisRange = "{13266, 1349}";
+		};
+	};
+	C90118C610FB65BA00EA417D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 50F414ED1069373D002A0D5E /* fps_images.png */;
+	};
+	C90118C710FB65BA00EA417D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 50F414EE1069373D002A0D5E /* Icon.png */;
+	};
+	C9194D4A1117269F0070B272 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C901189A10FB61EE00EA417D /* player_hud.h */;
+		name = "player_hud.h: 17";
+		rLen = 20;
+		rLoc = 554;
+		rType = 0;
+		vrLen = 1312;
+		vrLoc = 0;
+	};
+	C9194D4B1117269F0070B272 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C901189B10FB61EE00EA417D /* player_hud.m */;
+		name = "player_hud.m: 178";
+		rLen = 20;
+		rLoc = 5691;
+		rType = 0;
+		vrLen = 5495;
+		vrLoc = 4856;
+	};
+	C9194D56111727980070B272 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C901188810FB61EE00EA417D /* m_target.h */;
+		name = "m_target.h: 13";
+		rLen = 14;
+		rLoc = 338;
+		rType = 0;
+		vrLen = 717;
+		vrLoc = 0;
+	};
+	C925EBB610FB823A0084BCAA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F3B9A2C0EF2145700286867 /* Airliner_LiteAppDelegate.h */;
+		name = "Airliner_LiteAppDelegate.h: 17";
+		rLen = 0;
+		rLoc = 338;
+		rType = 0;
+		vrLen = 339;
+		vrLoc = 0;
+	};
+	C925ECB310FB88990084BCAA /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = C90116AC10FB61A700EA417D /* menu-btn-highscores-click.png */;
+	};
+	C94BBD9F1119721F00A0B7DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C901188910FB61EE00EA417D /* m_target.m */;
+		name = "m_target.m: 22";
+		rLen = 0;
+		rLoc = 650;
+		rType = 0;
+		vrLen = 2832;
+		vrLoc = 0;
+	};
+	C94BBDA01119721F00A0B7DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C901187D10FB61EE00EA417D /* AirlinerIntroNode.m */;
+		name = "AirlinerIntroNode.m: 77";
+		rLen = 0;
+		rLoc = 1658;
+		rType = 0;
+		vrLen = 1658;
+		vrLoc = 0;
+	};
+	C94BBDF7111979A000A0B7DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F3B9A2B0EF2145700286867 /* Airliner_LiteAppDelegate.m */;
+		name = "Airliner_LiteAppDelegate.m: 38";
+		rLen = 0;
+		rLoc = 1046;
+		rType = 0;
+		vrLen = 3390;
+		vrLoc = 0;
+	};
+	C94BBE3A11197B7900A0B7DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C901188110FB61EE00EA417D /* GameState.m */;
+		name = "GameState.m: 224";
+		rLen = 0;
+		rLoc = 7062;
+		rType = 0;
+		vrLen = 3041;
+		vrLoc = 5107;
+	};
+	C9ADC30D1115CD8800BAB3F0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9ADC30E1115CD8800BAB3F0 /* GameState.h */;
+		name = "GameState.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1851;
+		vrLoc = 0;
+	};
+	C9ADC30E1115CD8800BAB3F0 /* GameState.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = GameState.h;
+		path = "/Users/rabshakeh/workspace/Airliner_USA/code/Airliner USA/Classes/GameState.h";
+		sourceTree = "<absolute>";
+	};
+	C9B3A97C1117181D001FFC16 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C901188010FB61EE00EA417D /* GameState.h */;
+		name = "GameState.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2976;
+		vrLoc = 0;
+	};
+	C9B3A97D1117181D001FFC16 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C901189810FB61EE00EA417D /* player_airplane.h */;
+		name = "player_airplane.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1047;
+		vrLoc = 0;
+	};
+	C9B3AAC311171CED001FFC16 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C901189510FB61EE00EA417D /* menu_main.m */;
+		name = "menu_main.m: 26";
+		rLen = 0;
+		rLoc = 472;
+		rType = 0;
+		vrLen = 4719;
+		vrLoc = 870;
+	};
+	C9C2D3081119A71D001A34FC /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 50F414EF1069373D002A0D5E /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			LSRequiresIPhoneOS,
+		);
+		name = "/Users/rabshakeh/workspace/Airliner/code/Airliner Lite/Resources/Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	C9C2D3091119A71D001A34FC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C901188910FB61EE00EA417D /* m_target.m */;
+		name = "m_target.m: 22";
+		rLen = 0;
+		rLoc = 650;
+		rType = 0;
+		vrLen = 3485;
+		vrLoc = 1646;
+	};
+}

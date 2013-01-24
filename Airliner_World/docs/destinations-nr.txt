@@ -1,0 +1,223 @@
+     0 Africa
+     1 Asia
+     2 Europe
+     3 North America
+     4 South America
+     5 Oceania
+
+     6 Algeria
+     7 Angola
+     8 Benin
+     9 Botswana
+     10 Burkina Faso
+     11 Burundi
+     12 Cameroon
+     13 Cape Verde
+     14 Central African Republic
+     15 Chad
+     16 Comoros
+     17 Ivory Coast
+     18 Djibouti
+     19 Egypt
+     20 Equatorial Guinea
+     21 Eritrea
+     22 Ethiopia
+     23 Gabon
+     24 Gambia
+     25 Ghana
+     26 Guinea
+     27 Guinea-Bissau
+     28 Kenya
+     29 Lesotho
+     30 Liberia
+     31 Libya
+     32 Madagascar
+     33 Malawi
+     34 Mali
+     35 Mauritania
+     36 Mauritius
+     37 Mayotte
+     38 Morocco
+     39 Mozambique
+     40 Namibia
+     41 Niger
+     42 Nigeria
+     43 Réunion
+     44 Rwanda
+     45 Sao Tome and Principe
+     46 Senegal
+     47 Seychelles
+     48 Sierra Leone
+     49 Somalia
+     50 South Africa
+     51 Sudan
+     52 Swaziland
+     53 Tanzania
+     54 Togo
+     55 Tunisia
+     56 Uganda
+     57 Zambia
+     58 Zimbabwe
+     59 Afghanistan
+     60 Bahrain
+     61 Bangladesh
+     62 Bhutan
+     63 Brunei
+     64 Cambodia
+     65 China
+     66 Hong Kong
+     67 India
+     68 Indonesia
+     69 Iran
+     70 Iraq
+     71 Israel
+     72 Japan
+     73 Jordan
+     74 Kazakhstan
+     75 North Korea
+     76 South Korea
+     77 Kuwait
+     78 Kyrgyzstan
+     79 Laos
+     80 Lebanon
+     81 Macau
+     82 Malaysia
+     83 Maldives
+     84 Mongolia
+     85 Myanmar (Burma)
+     86 Nepal
+     87 Oman
+     88 Pakistan
+     89 Palestinian territories
+     90 Philippines
+     91 Qatar
+     92 Saudi Arabia
+     93 Singapore
+     94 Sri Lanka
+     95 Syria
+     96 Tajikistan
+     97 Thailand
+     98 Timor-Leste (East Timor)
+     99 Turkey
+     100 Turkmenistan
+     101 United Arab Emirates
+     102 Uzbekistan
+     103 Vietnam
+     104 Yemen
+     105 Albania
+     106 Andorra
+     107 Austria
+     108 Belarus
+     109 Belgium
+     110 Bosnia and Herzegovina
+     111 Bulgaria
+     112 Croatia
+     113 Czech Republic
+     114 Denmark
+     115 Estonia
+     116 Faroe Islands
+     117 Finland
+     118 France
+     119 Germany
+     120 Gibraltar
+     121 Greece
+     122 Guernsey
+     123 Hungary
+     124 Iceland
+     125 Ireland
+     126 Isle of Man
+     127 Italy
+     128 Jersey
+     129 Latvia
+     130 Liechtenstein
+     131 Lithuania
+     132 Luxembourg
+     133 Macedonia
+     134 Malta
+     135 Moldova
+     136 Monaco
+     137 Montenegro
+     138 Netherlands
+     139 Norway
+     140 Poland
+     141 Portugal
+     142 Romania
+     143 San Marino
+     144 Serbia
+     145 Slovakia
+     146 Slovenia
+     147 Spain
+     148 Sweden
+     149 Switzerland
+     150 Ukraine
+     151 United Kingdom
+     152 Vatican City
+     153 Kosovo
+     154 Anguilla
+     155 Antigua and Barbuda
+     156 Aruba
+     157 Bahamas
+     158 Barbados
+     159 Belize
+     160 Bermuda
+     161 British Virgin Islands
+     162 Canada
+     163 Cayman Islands
+     164 Costa Rica
+     165 Cuba
+     166 Dominica
+     167 Dominican Republic
+     168 El Salvador
+     169 Greenland
+     170 Grenada
+     171 Guadeloupe
+     172 Guatemala
+     173 Haiti
+     174 Honduras
+     175 Jamaica
+     176 Martinique
+     177 Mexico
+     178 Montserrat
+     179 Netherlands Antilles
+     180 Nicaragua
+     181 Panama
+     182 Puerto Rico
+     183 Saint Barthélemy
+     184 Saint Kitts and Nevis
+     185 Saint Lucia
+     186 Saint Vincent and the Grenadines
+     187 Trinidad and Tobago
+     188 Turks and Caicos Islands
+     189 United States
+     190 Argentina
+     191 Bolivia
+     192 Brazil
+     193 Chile
+     194 Colombia
+     195 Ecuador
+     196 Falkland Islands
+     197 French Guiana
+     198 Guyana
+     199 Paraguay
+     200 Peru
+     201 Suriname
+     202 Uruguay
+     203 Venezuela
+     204 American Samoa
+     205 Australia
+     206 Baker Island
+     207 Fiji
+     208 French Polynesia
+     209 Guam
+     210 Johnston Atoll
+     211 Marshall Islands
+     212 Micronesia
+     213 Nauru
+     214 New Zealand
+     215 Norfolk Island
+     216 Palau
+     217 Papua New Guinea
+     218 Samoa
+     219 Solomon Islands
+     220 Tonga
+     221 Vanuatu
