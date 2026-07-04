@@ -24,6 +24,8 @@
 	<string>true</string>
 	<key>UIRequiresFullScreen</key>
 	<true/>
+	<key>UILaunchScreen</key>
+	<dict/>
 	<key>UIStatusBarHidden</key>
 	<true/>
 	<key>UISupportedInterfaceOrientations</key>

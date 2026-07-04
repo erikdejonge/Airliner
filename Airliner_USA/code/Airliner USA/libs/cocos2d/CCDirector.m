@@ -58,6 +58,11 @@
 
 #define kDefaultFPS		60.0	// 60 frames per second
 
+// Fixed design resolution (original iPhone, portrait). The game is authored for
+// this logical size; it is rendered into the full native surface, letterboxed.
+#define kCCDesignWidth		320.0f
+#define kCCDesignHeight		480.0f
+
 extern NSString * cocos2dVersion(void);
 
 
@@ -234,14 +239,38 @@ static CCDirector *_sharedDirector = nil;
 	}
 
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	
+
+	// Render the fixed-size design (surfaceSize_) into an aspect-preserving,
+	// centred (letterboxed) viewport that fills the full native renderbuffer.
+	// This keeps the game crisp on high-DPI screens without distorting it.
+	{
+		CGSize backing = [openGLView_ surfaceSize];
+		if( backing.width > 0 && backing.height > 0 ) {
+			float designAspect  = surfaceSize_.width / surfaceSize_.height;
+			float backingAspect = backing.width / backing.height;
+			float vpW, vpH, vpX, vpY;
+			if( backingAspect > designAspect ) {
+				vpH = backing.height;
+				vpW = vpH * designAspect;
+				vpX = (backing.width - vpW) * 0.5f;
+				vpY = 0;
+			} else {
+				vpW = backing.width;
+				vpH = vpW / designAspect;
+				vpX = 0;
+				vpY = (backing.height - vpH) * 0.5f;
+			}
+			glViewport((GLint)vpX, (GLint)vpY, (GLsizei)vpW, (GLsizei)vpH);
+		}
+	}
+
 	/* to avoid flickr, nextScene MUST be here: after tick and before draw.
 	 XXX: Which bug is this one. It seems that it can't be reproduced with v0.9 */
 	if( nextScene_ )
 		[self setNextScene];
-	
+
 	glPushMatrix();
-	
+
 	[self applyLandscape];
 	
 	// By default enable VertexArray, ColorArray, TextureCoordArray and Texture2D
@@ -474,11 +503,15 @@ static CCDirector *_sharedDirector = nil;
 		// set the (new) frame of the glview
 		[openGLView_ setFrame:rect];
 	}
-	
-	screenSize_ = rect.size;
-	surfaceSize_ = CGSizeMake(screenSize_.width * contentScaleFactor_, screenSize_.height * contentScaleFactor_);
 
-	
+	// Fixed design resolution: keep cocos2d's logical coordinate space pinned to
+	// the game's authored 320x480 (480x320 landscape) size and render it into the
+	// full native surface (see -mainLoop letterbox viewport) so it stays crisp on
+	// modern high-DPI screens.
+	screenSize_  = CGSizeMake(kCCDesignWidth, kCCDesignHeight);
+	surfaceSize_ = CGSizeMake(kCCDesignWidth, kCCDesignHeight);
+
+
 	// set the touch delegate of the glview to self
 	[openGLView_ setTouchDelegate: [CCTouchDispatcher sharedDispatcher]];
 
@@ -528,11 +561,15 @@ static CCDirector *_sharedDirector = nil;
 		[openGLView_ release];
 		openGLView_ = [view retain];
 		
-		// set size
-		screenSize_ = [view bounds].size;
-		surfaceSize_ = CGSizeMake(screenSize_.width * contentScaleFactor_, screenSize_.height *contentScaleFactor_);
-		
-		
+		// Fixed design resolution: the game is authored for a 320x480 portrait
+		// (480x320 landscape) screen. We keep cocos2d's logical coordinate space
+		// pinned to that design size and render it into the full native surface
+		// (see -mainLoop letterbox viewport), so the game stays laid out correctly
+		// while rendering crisply on modern high-DPI screens.
+		screenSize_  = CGSizeMake(kCCDesignWidth, kCCDesignHeight);
+		surfaceSize_ = CGSizeMake(kCCDesignWidth, kCCDesignHeight);
+
+
 		CCTouchDispatcher *touchDispatcher = [CCTouchDispatcher sharedDispatcher];
 		[openGLView_ setTouchDelegate: touchDispatcher];
 		[touchDispatcher setDispatchEvents: YES];
@@ -544,27 +581,48 @@ static CCDirector *_sharedDirector = nil;
 
 -(CGPoint)convertToGL:(CGPoint)uiPoint
 {
-	// The UIKit touch point is in the EAGLView's *view* coordinate space, which
-	// on modern devices (e.g. a 393x852pt view backed by a 320x480 GL surface)
-	// no longer matches the GL surface. Map the point into surface space first,
-	// then apply the orientation swap using the surface size — otherwise touches
-	// land far outside the game's coordinate system and steering breaks.
-	CGPoint p = [openGLView_ convertPointFromViewToSurface:uiPoint];
-	CGSize s = [openGLView_ surfaceSize];
-	float newY = s.height - p.y;
-	float newX = s.width - p.x;
+	// The design (surfaceSize_) is rendered aspect-fit / letterboxed inside the
+	// EAGLView. Map the UIKit touch point (view point space) into the design
+	// coordinate space by normalising it within that letterbox rectangle, then
+	// apply the same orientation swap the original code used.
+	CGSize view   = [openGLView_ bounds].size;
+	CGSize design = surfaceSize_;
+
+	float designAspect = design.width / design.height;
+	float viewAspect   = view.width / view.height;
+	float gW, gH, gX, gY;
+	if( viewAspect > designAspect ) {
+		gH = view.height;
+		gW = gH * designAspect;
+		gX = (view.width - gW) * 0.5f;
+		gY = 0;
+	} else {
+		gW = view.width;
+		gH = gW / designAspect;
+		gX = 0;
+		gY = (view.height - gH) * 0.5f;
+	}
+
+	// Surface-space coordinates in the design system (UIKit y-down), matching
+	// what convertPointFromViewToSurface used to return before the design/native
+	// split.
+	float px = (uiPoint.x - gX) / gW * design.width;
+	float py = (uiPoint.y - gY) / gH * design.height;
+
+	float newY = design.height - py;
+	float newX = design.width - px;
 
 	CGPoint ret;
 	switch ( deviceOrientation_) {
 		case CCDeviceOrientationPortrait:
-			 ret = ccp( p.x, newY );
+			 ret = ccp( px, newY );
 			break;
 		case CCDeviceOrientationPortraitUpsideDown:
-			ret = ccp(newX, p.y);
+			ret = ccp(newX, py);
 			break;
 		case CCDeviceOrientationLandscapeLeft:
-			ret.x = p.y;
-			ret.y = p.x;
+			ret.x = py;
+			ret.y = px;
 			break;
 		case CCDeviceOrientationLandscapeRight:
 			ret.x = newY;
