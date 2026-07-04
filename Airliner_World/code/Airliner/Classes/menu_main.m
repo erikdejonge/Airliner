@@ -39,21 +39,21 @@
   [[SimpleAudioEngine sharedEngine] preloadEffect:@"Cabin.wav"];
 
   // ignore crappy loader for now
-  // [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[Game scene]]];
+  // [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[Game scene]]];
   // return;
 
   if ([gs getTexturesLoaded] == NO) {
-    [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[AirlinerIntroNode scene]]];
+    [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[AirlinerIntroNode scene]]];
     [gs setTexturesLoaded:YES];
   }
   else {
-    [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[Game scene]]];
+    [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[Game scene]]];
   }
 }
 
 -(void) instructions: (id) sender
 {
-  [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[InstructionsMenu scene]]];
+  [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[InstructionsMenu scene]]];
 }
 
 -(void) newGame: (id) sender
@@ -65,32 +65,32 @@
   [[SimpleAudioEngine sharedEngine] preloadEffect:@"target_missed.wav"];
   [[SimpleAudioEngine sharedEngine] preloadEffect:@"Cabin.wav"];
 
-  //[[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[Game scene]]];
+  //[[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[Game scene]]];
   // ignore crappy loader for now
   //return;
 
   if ([gs getTexturesLoaded] == NO) {
-    [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[AirlinerIntroNode scene]]];
+    [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[AirlinerIntroNode scene]]];
     [gs setTexturesLoaded:YES];
   }
   else {
-    [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[Game scene]]];
+    [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[Game scene]]];
   }
 }
 
 -(void) highScores: (id) sender
 {
-  [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[HighscoreMenu scene]]];
+  [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[HighscoreMenu scene]]];
 }
 
 -(void) sound: (id) sender
 {
-  [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[SoundMenu scene]]];
+  [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[SoundMenu scene]]];
 }
 
 -(void) about: (id) sender
 {
-  [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[AboutMenu scene]]];
+  [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[AboutMenu scene]]];
 }
 
 -(void) imageLoaded: (CCTexture2D *) image

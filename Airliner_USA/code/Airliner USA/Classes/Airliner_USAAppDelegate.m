@@ -61,6 +61,13 @@
 
   // create an openGL view inside a window
   [[CCDirector sharedDirector] attachInView:window];
+
+  // Modern iOS (13+) requires the window to have a root view controller at the
+  // end of application launch. Host the cocos2d GL view in a plain controller.
+  UIViewController *rootVC = [[UIViewController alloc] init];
+  [rootVC setView:[[CCDirector sharedDirector] openGLView]];
+  [window setRootViewController:rootVC];
+
   [window makeKeyAndVisible];
 
   // prevent flicker

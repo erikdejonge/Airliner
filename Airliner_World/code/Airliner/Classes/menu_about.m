@@ -89,7 +89,7 @@
     [[SimpleAudioEngine sharedEngine] playEffect:@"menu_click1.wav"];
   }
 
-  [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[MainMenu scene]]];
+  [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[MainMenu scene]]];
 }
 
 +(id) scene

@@ -65,77 +65,6 @@
   return(self);
 }
 
--(void) removeAd
-{
-  [adController.view removeFromSuperview];
-  [adController release];
-  adController = nil;
-}
-
--(void) onExit
-{
-  [self removeAd];
-}
-
--(void) onEnterTransitionDidFinish
-{
-  [super onEnterTransitionDidFinish];
-
-  adController = [[UIViewController alloc] init];
-
-  adView                                = [[ADBannerView alloc] initWithFrame:CGRectZero];
-  adView.requiredContentSizeIdentifiers = [NSSet setWithObject:ADBannerContentSizeIdentifier480x32];
-  adView.currentContentSizeIdentifier   = ADBannerContentSizeIdentifier480x32;
-  adView.delegate                       = self;
-
-  // Re Position the the view
-  CGAffineTransform transform = CGAffineTransformMakeTranslation(-224, 206);
-  transform        = CGAffineTransformRotate(transform, CC_DEGREES_TO_RADIANS(90));
-  adView.transform = transform;
-
-  // Set as invisible until the iAd is loaded
-  [adView setHidden:YES];
-
-  [adController.view addSubview:adView];
-
-  [[[CCDirector sharedDirector] openGLView] addSubview:adController.view];
-}
-
--(void) cancelBannerViewAction
-{
-  CCLOG(@"[iAd]: cancelBannerViewAction");
-}
-
--(void) bannerViewDidLoadAd: (ADBannerView *) banner
-{
-  CCLOG(@"[iAd]: bannerViewDidLoadAd");
-  [adView setHidden:NO];
-}
-
--(BOOL) bannerViewActionShouldBegin: (ADBannerView *) banner willLeaveApplication: (BOOL) willLeave
-{
-  CCLOG(@"[iAd]: bannerViewActionShouldBegin:willLeaveApplication %d", willLeave);
-
-  // TIP:
-  // According to Apple's docs, the game should be paused, and the music should be stopped
-  // when an iAd is displayed
-
-  [[CDAudioManager sharedManager] pauseBackgroundMusic];
-  [[CCDirector sharedDirector] stopAnimation];
-  return(YES);
-}
-
--(void) bannerViewActionDidFinish: (ADBannerView *) banner
-{
-  [[CDAudioManager sharedManager] resumeBackgroundMusic];
-  [[CCDirector sharedDirector] startAnimation];
-}
-
--(void) bannerView: (ADBannerView *) didFailToReceiveAdWithError: (NSError *) error
-{
-  CCLOG(@"[iAd]: bannerViewActionDidFinish:didFailToReceiveAdWithError %@", error);
-}
-
 -(void) registerWithTouchDispatcher
 {
   [[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:YES];
@@ -149,9 +78,6 @@
 
   CGPoint touchLocation = [touch locationInView:[touch view]];
   touchLocation = [[CCDirector sharedDirector] convertToGL: touchLocation];
-  if (YES ==[hud possiblePauseTouch:touchLocation action:NO]) {
-    [self removeAd];
-  }
   if (NO ==[hud possibleTurboTouch:touchLocation action:YES] &&
       NO ==[hud possiblePauseTouch:touchLocation action:YES] &&
       NO ==[hud possibleSkipTouch:touchLocation action:YES]) {

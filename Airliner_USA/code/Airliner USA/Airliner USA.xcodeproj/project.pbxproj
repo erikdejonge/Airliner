@@ -323,7 +323,6 @@
 		C96E6CB311108C9500E5F192 /* 12-Almost-Undamaged.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C96E6CA111108C9500E5F192 /* 12-Almost-Undamaged.mp3 */; };
 		C9A28E0911119868001B0305 /* dot.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A28E0811119868001B0305 /* dot.png */; };
 		C9A28E4E1111A4C3001B0305 /* reddot.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A28E4D1111A4C3001B0305 /* reddot.png */; };
-		C9C2BA141209B9CA00343FED /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C2BA131209B9CA00343FED /* iAd.framework */; };
 		C9EC85CC1100A14A00E2CC6D /* flag-0.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EC85991100A14A00E2CC6D /* flag-0.png */; };
 		C9EC85CD1100A14A00E2CC6D /* flag-1.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EC859A1100A14A00E2CC6D /* flag-1.png */; };
 		C9EC85CE1100A14A00E2CC6D /* flag-2.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EC859B1100A14A00E2CC6D /* flag-2.png */; };
@@ -852,7 +851,6 @@
 		C96E6CA111108C9500E5F192 /* 12-Almost-Undamaged.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "12-Almost-Undamaged.mp3"; sourceTree = "<group>"; };
 		C9A28E0811119868001B0305 /* dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dot.png; sourceTree = "<group>"; };
 		C9A28E4D1111A4C3001B0305 /* reddot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reddot.png; sourceTree = "<group>"; };
-		C9C2BA131209B9CA00343FED /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		C9EC85991100A14A00E2CC6D /* flag-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-0.png"; sourceTree = "<group>"; };
 		C9EC859A1100A14A00E2CC6D /* flag-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-1.png"; sourceTree = "<group>"; };
 		C9EC859B1100A14A00E2CC6D /* flag-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-2.png"; sourceTree = "<group>"; };
@@ -927,7 +925,6 @@
 				506EDB88102F4C4000A389B3 /* libz.dylib in Frameworks */,
 				506EDBA5102F4C9F00A389B3 /* AVFoundation.framework in Frameworks */,
 				C945302010FDDB3C007A4D07 /* libsqlite3.0.dylib in Frameworks */,
-				C9C2BA141209B9CA00343FED /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -973,7 +970,6 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C9C2BA131209B9CA00343FED /* iAd.framework */,
 				C945301F10FDDB3C007A4D07 /* libsqlite3.0.dylib */,
 				DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */,
 				DCCBF1B80F6022AE0040855A /* Foundation.framework */,
@@ -2075,7 +2071,8 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = "Airliner USA";
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Debug;
@@ -2098,7 +2095,8 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = "Airliner USA";
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Release;
@@ -2107,14 +2105,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				USER_HEADER_SEARCH_PATHS = "./libs/**";
 			};
 			name = Debug;
@@ -2123,7 +2122,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = s;
@@ -2131,7 +2130,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				USER_HEADER_SEARCH_PATHS = "./libs/**";
 			};
 			name = Release;
@@ -2140,7 +2140,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = s;
@@ -2148,7 +2148,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				USER_HEADER_SEARCH_PATHS = "./libs/**";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2172,7 +2173,8 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = "Airliner USA";
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Distribute;

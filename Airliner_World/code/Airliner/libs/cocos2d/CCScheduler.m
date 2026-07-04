@@ -483,7 +483,7 @@ static CCScheduler *sharedScheduler;
 -(void) resumeTarget:(id)target
 {
 	NSAssert( target != nil, @"target must be non nil" );
-	
+
 	// Custom Selectors
 	tHashSelectorEntry *element = NULL;
 	HASH_FIND_INT(hashForSelectors, &target, element);
@@ -548,8 +548,8 @@ static CCScheduler *sharedScheduler;
 	}
 	
 	// Iterate all over the  custome selectors
-	for(tHashSelectorEntry *elt=hashForSelectors; elt != NULL; ) {	
-		
+	for(tHashSelectorEntry *elt=hashForSelectors; elt != NULL; ) {
+
 		currentTarget = elt;
 		currentTargetSalvaged = NO;
 

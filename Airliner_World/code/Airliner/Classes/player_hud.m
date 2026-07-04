@@ -76,7 +76,7 @@ enum
     [[SimpleAudioEngine sharedEngine] playEffect:@"menu_click1.wav"];
   }
 
-  [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[MainMenu scene]]];
+  [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[MainMenu scene]]];
 }
 
 -(void) submitLocalScoreWithName: (NSString *) playername
@@ -108,7 +108,7 @@ enum
   }
   [self submitLocalScoreWithName: playername];
   [nameField removeFromSuperview];
-  [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[HighscoreMenu scene]]];
+  [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[HighscoreMenu scene]]];
   return(NO);
 }
 
@@ -367,7 +367,7 @@ enum
       GameState *gs = [GameState sharedInstance];
       [gs setResuming:YES];
       [gs saveState];
-      [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[MainMenu scene]]];
+      [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[MainMenu scene]]];
       if ([gs getEffects]) {
         [[SimpleAudioEngine sharedEngine] playEffect:@"menu_click1.wav"];
       }

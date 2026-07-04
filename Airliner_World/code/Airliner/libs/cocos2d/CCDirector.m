@@ -224,7 +224,7 @@ static CCDirector *_sharedDirector = nil;
 // main loop
 //
 - (void) mainLoop
-{    
+{
 	/* calculate "global" dt */
 	[self calculateDeltaTime];
 	
@@ -544,29 +544,34 @@ static CCDirector *_sharedDirector = nil;
 
 -(CGPoint)convertToGL:(CGPoint)uiPoint
 {
-	CGSize s = screenSize_;
-	float newY = s.height - uiPoint.y;
-	float newX = s.width - uiPoint.x;
-	
+	// The UIKit touch point is in the EAGLView's *view* coordinate space, which
+	// on modern devices (e.g. a 393x852pt view backed by a 320x480 GL surface)
+	// no longer matches the GL surface. Map the point into surface space first,
+	// then apply the orientation swap using the surface size — otherwise touches
+	// land far outside the game's coordinate system and steering breaks.
+	CGPoint p = [openGLView_ convertPointFromViewToSurface:uiPoint];
+	CGSize s = [openGLView_ surfaceSize];
+	float newY = s.height - p.y;
+	float newX = s.width - p.x;
+
 	CGPoint ret;
 	switch ( deviceOrientation_) {
 		case CCDeviceOrientationPortrait:
-			 ret = ccp( uiPoint.x, newY );
+			 ret = ccp( p.x, newY );
 			break;
 		case CCDeviceOrientationPortraitUpsideDown:
-			ret = ccp(newX, uiPoint.y);
+			ret = ccp(newX, p.y);
 			break;
 		case CCDeviceOrientationLandscapeLeft:
-			ret.x = uiPoint.y;
-			ret.y = uiPoint.x;
+			ret.x = p.y;
+			ret.y = p.x;
 			break;
 		case CCDeviceOrientationLandscapeRight:
 			ret.x = newY;
 			ret.y = newX;
 			break;
 		}
-	
-	ret = ccpMult(ret, contentScaleFactor_);
+
 	return ret;
 }
 

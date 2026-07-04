@@ -161,13 +161,14 @@ static CCTextureCache *sharedTextureCache;
 
 	// schedule the load
 	
-	CCAsyncObject *asyncObject = [[CCAsyncObject alloc] init];
-	asyncObject.selector = selector;
-	asyncObject.target = target;
-	asyncObject.data = filename;
-	
-	[NSThread detachNewThreadSelector:@selector(addImageWithAsyncObject:) toTarget:self withObject:asyncObject];
-	[asyncObject release];
+	// Modern iOS note: the original implementation loaded the texture on a
+	// background thread using an auxiliary shared EAGLContext. On current
+	// simulators/devices that secondary ES1 context is unreliable and the
+	// completion callback could never fire, hanging the loading screen.
+	// Load synchronously on the calling (main) thread instead — the images
+	// are small and this keeps all GL work on the main context.
+	tex = [self addImage:filename];
+	[target performSelector:selector withObject:tex];
 }
 
 -(CCTexture2D*) addImage: (NSString*) path

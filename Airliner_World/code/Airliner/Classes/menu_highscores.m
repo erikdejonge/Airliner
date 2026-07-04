@@ -30,7 +30,7 @@
   if ([gs getEffects]) {
     [[SimpleAudioEngine sharedEngine] playEffect:@"menu_click1.wav"];
   }
-  [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[MainMenu scene]]];
+  [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[MainMenu scene]]];
 }
 
 -(void) newGame: (id) sender
@@ -40,11 +40,11 @@
   [gs newGame];
 
   if ([gs getTexturesLoaded] == NO) {
-    [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[AirlinerIntroNode scene]]];
+    [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[AirlinerIntroNode scene]]];
     [gs setTexturesLoaded:YES];
   }
   else {
-    [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[Game scene]]];
+    [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[Game scene]]];
   }
 }
 

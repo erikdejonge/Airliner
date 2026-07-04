@@ -2,3 +2,10 @@
 .DS_Store
 *.pyc
 .idea
+
+# Xcode user state / tooling
+xcuserdata/
+*.xcuserstate
+.claude/
+DerivedData/
+build/

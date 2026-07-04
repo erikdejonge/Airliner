@@ -90,7 +90,11 @@
 
  @since v0.99.0
  */
-#define CC_TEXTURE_ATLAS_USES_VBO 1
+// Disabled for modern iOS: the Apple software ES1 renderer used by the
+// simulator does not reliably draw batched geometry through VBOs, which left
+// every CCSpriteSheet-based scene (the whole game world) rendering black.
+// The client-array path below is 64-bit safe and renders correctly.
+#define CC_TEXTURE_ATLAS_USES_VBO 0
 
 /** @def CC_NODE_TRANSFORM_USING_AFFINE_MATRIX
  If enabled, CCNode will transform the nodes using a cached Affine matrix.

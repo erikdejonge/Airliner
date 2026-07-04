@@ -32,7 +32,8 @@
   airplane          = [[CCSprite spriteWithFile:@"plane.png"] retain];
   airplane.position = ccp(SCREENWIDTH / 2, SCREENHEIGHT / 2);
 
-  airplane.rotation = [gs getAirplaneRotation];
+  airplane.rotation        = [gs getAirplaneRotation];
+  current_heading_airplane = airplane.rotation;
   [world_layer addChild:airplane z:4];
 }
 
@@ -121,9 +122,14 @@
   if (a < 0) {
     deg += 180;
   }
+  // Only record the desired heading; the airplane is rotated smoothly towards
+  // it each frame in -smoothRotateTowardsHeading:. The old code animated this
+  // with a stacked CCRotateTo action, which the action manager corrupted on
+  // modern iOS (rotation blew up to garbage values, wrecking steering and the
+  // smoke trail).
+  while (deg < 0)      deg += 360;
+  while (deg >= 360)   deg -= 360;
   current_heading_airplane = deg;
-  id rotateto = [CCRotateTo actionWithDuration:1  angle: deg];
-  [airplane runAction: rotateto];
   [gs setAirplaneRotation:deg];
   autopilotmisses++;
 }
@@ -144,9 +150,9 @@
   if (a < 0) {
     deg += 180;
   }
+  while (deg < 0)      deg += 360;
+  while (deg >= 360)   deg -= 360;
   current_heading_airplane = deg;
-  id rotateto = [CCRotateTo actionWithDuration:dur angle: deg];
-  [airplane runAction: rotateto];
   [gs setAirplaneRotation:deg];
 }
 
@@ -198,8 +204,33 @@
     }
     autopilot_time_tracker2 += dt;
   }
+  [self smoothRotateTowardsHeading:dt];
   [self calculateMovementVector];
   [self updateSmokeTrail:dt];
+}
+
+// Rotate the airplane sprite towards current_heading_airplane at a fixed rate,
+// taking the shortest angular path. Replaces the old CCRotateTo animation.
+-(void) smoothRotateTowardsHeading: (ccTime) dt
+{
+  float current = airplane.rotation;
+  float diff    = current_heading_airplane - current;
+
+  while (diff > 180)  diff -= 360;
+  while (diff < -180) diff += 360;
+
+  float maxStep = 180.0f * dt;   // a 180 degree turn takes ~1 second
+  float newRot;
+  if (fabsf(diff) <= maxStep) {
+    newRot = current_heading_airplane;
+  }
+  else {
+    newRot = current + (diff > 0 ? maxStep : -maxStep);
+  }
+
+  while (newRot < 0)    newRot += 360;
+  while (newRot >= 360) newRot -= 360;
+  airplane.rotation = newRot;
 }
 
 @end

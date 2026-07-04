@@ -311,7 +311,7 @@
 	
 #else // ! CC_TEXTURE_ATLAS_USES_VBO
 	
-	int offset = (int)quads_;
+	intptr_t offset = (intptr_t)quads_;
 
 	// vertex
 	int diff = offsetof( ccV3F_C4B_T2F, vertices);

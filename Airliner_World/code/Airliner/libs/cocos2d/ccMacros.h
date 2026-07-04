@@ -158,7 +158,9 @@ do	{																							\
 									depthFormat:0 /* GL_DEPTH_COMPONENT24_OES */				\
 							 preserveBackbuffer:NO];											\
 	[__director setOpenGLView:__glView];														\
-	[window addSubview:__glView];																\
+	UIViewController *__rootVC = [[UIViewController alloc] init];								\
+	[__rootVC setView:__glView];																\
+	[window setRootViewController:__rootVC];													\
 	[window makeKeyAndVisible];																	\
 } while(0)
  

@@ -40,7 +40,7 @@
   }
   slide++;
   if (slide > 7) {
-    [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[MainMenu scene]]];
+    [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[MainMenu scene]]];
     return;
   }
   [self setSlide];
@@ -55,7 +55,7 @@
   }
   slide--;
   if (slide < 1) {
-    [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[MainMenu scene]]];
+    [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[MainMenu scene]]];
     return;
   }
   [self setSlide];

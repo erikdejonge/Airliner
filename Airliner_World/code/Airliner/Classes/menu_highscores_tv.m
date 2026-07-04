@@ -34,7 +34,7 @@
     [myTableView release];
     myTableView = nil;
   }
-  [[CCDirector sharedDirector] replaceScene:[CCCrossFadeTransition transitionWithDuration:TRANS_DURATION scene:[MainMenu scene]]];
+  [[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:TRANS_DURATION scene:[MainMenu scene]]];
 }
 
 -(id) init

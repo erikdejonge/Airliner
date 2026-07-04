@@ -6,12 +6,11 @@
 #import "m_cloudlayer.h"
 #import "player_airplane.h"
 #import "player_hud.h"
-#import <iAd/iAd.h>
 
 #define NUMDOTS  30
 
 // Game CCLayer
-@interface Game : CCLayer<ADBannerViewDelegate> {
+@interface Game : CCLayer {
   player_airplane  *player;
   player_hud       *hud;
   m_worldclip      *world;
@@ -23,8 +22,6 @@
   BOOL             fast_machine;
   CCSprite         *dots[NUMDOTS];
   CCFadeOut        *dot_fades[NUM_SMOKE_TRAIL];
-  UIViewController *adController;
-  ADBannerView     *adView;
 }
 
 // returns a CCScene that contains the Game as the only child
